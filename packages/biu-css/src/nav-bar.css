@@ -1,0 +1,43 @@
+@import './common/var.css';
+
+
+.#{$prefix} {
+  &-nav-bar {
+    height: 2.75rem;
+    position: relative;
+    line-height: 2.75rem;
+    background-color: #f7f7f7;
+    text-align: center;
+      &::after {
+        width: auto;
+        left: 0;
+        right: 0;
+        transform: scale(1, .5);
+        border-bottom-width: 1px;
+      }
+      &--fixed {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+      }
+      &--title {
+        max-width: 60%;
+        font-size: 1rem;
+        margin: 0 auto;
+      }
+      &--left, &--right {
+        font-size: 0.94rem;
+        position: absolute;
+        vertical-align: middle;
+        bottom: 0;
+        height: 2.75rem;
+      }
+      &--left{
+        left: 1.06rem;
+      }
+      &--right{
+        right: 1.06rem;
+      }
+  }
+}

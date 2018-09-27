@@ -1,0 +1,80 @@
+@import './common/var.css';
+
+.#{$prefix} {
+  &-cell {
+    display: flex;
+    padding: 0.75rem 1.13rem;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 0.88rem;
+  }
+    &:not(:last-child)::after {
+      width: auto;
+      left: 0;
+      right: 0;
+      transform: scale(1, .5);
+      border-bottom-width: 1px;
+    }
+    &__left-icon {
+      min-width: 1rem;
+      font-size: 1.2rem;
+      margin-right: 0.63rem;
+      box-sizing: border-box;
+    }
+    &__right-icon {
+      font-size: 1rem;
+      margin-left: 0.63rem;
+      color: #999;
+    }
+    &__title, &__value {
+      flex: 1;
+    }
+    &__title {
+      line-height: normal;
+      margin: auto;
+    }
+    &__value {
+      text-align: right;
+      position: relative;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    &__circular {
+      width: 1.13rem;
+      height: 1.13rem;
+      background-color: #ED5565;
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      padding: 0;
+      overflow: hidden;
+      display: inline-block;
+      line-height: 1.5;
+      text-align: center;
+      vertical-align: middle;
+    }
+    &__label {
+      font-size: 0.75rem;
+      color: #666666;
+      line-height: 1.2;
+      margin-top: 0.;
+    }
+    &--clickable {
+      &:active {
+        background-color: #f1f1f1;
+      }
+    .item-icon {
+      margin-right: 2rem;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+      }
+    }
+  }
+}

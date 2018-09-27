@@ -90,6 +90,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted: function(){
+    console.log(this.$options)
+    let {name} = this.$options
+    console.log(name, 'aaaaaaa')
   }
 }
 </script>
