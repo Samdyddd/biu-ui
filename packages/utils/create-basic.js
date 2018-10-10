@@ -1,4 +1,4 @@
-import bem from '../mixins/bem'
+import bem from '../mixins/bem';
 
 const install = function(Vue) {
   Vue.component(this.name, this);

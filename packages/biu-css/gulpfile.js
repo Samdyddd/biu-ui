@@ -1,11 +1,10 @@
 const gulp = require('gulp');
-
+// postcss
 const postcss = require('gulp-postcss');
-
+// 压缩和清理注释
 const cssmin = require('gulp-clean-css');
-
-const fs = require('fs-extra');
-
+// fs
+const fs = require('fs-extra');=
 // 编译
 gulp.task('complie', () => {
   // 确保目录为空，如果目录不为空，则删除目录内容；如果目录不存在则创建目录；目录本身不会被删除

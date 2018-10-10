@@ -33,40 +33,7 @@ export default {
   },
   data () {
     return {
-      items: [],<template>
-  <div class="hirline--top-bottom  blm-collapse">
-    <slot></slot>
-  </div>
-</template>
-
-<script>
-// import collapseItem from '../collapse-item'
-export default {
-  // components:{collapseItem},
-  name: 'collapse',
-  props: {
-    accordion: Boolean,
-    value: [String, Number, Array]
-  },
-  data () {
-    return {
-      items: []
-    }
-  },
-  methods: {
-    switch(name, expanded) {
-      if (!this.accordion) {
-        name = expanded
-          ? this.value.concat(name)
-          : this.value.filter(activeName => activeName !== name);
-      }
-      this.$emit('change', name);
-      this.$emit('input', name);
-    }
-  }
-}
-
-</script>
+      items: [],
       show: null,
       inited: null
     }

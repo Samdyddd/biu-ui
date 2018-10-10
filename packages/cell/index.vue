@@ -1,7 +1,7 @@
 <template>
   <div 
-  @click="onClick" 
-  :class="[b({clickable: clickable || isLink}), {'biu-hairline': border, 'biu-hairline--top': topBorder}]">
+    @click="onClick" 
+    :class="[b({clickable: clickable || isLink}), {'biu-hairline': border, 'biu-hairline--top': topBorder}]">
   
     <slot name="icon">
       <!-- <span v-if="icon" class="blm-cell__left-icon iconfont" :class="icon"></span> -->

@@ -3,7 +3,7 @@
   "env": {
     "jest": true
   },
-  "extends": ["plugin:vue-blis/recommended", "plugin:vue/strongly-recommended"],
+  "extends": ["plugin:vue-libs/recommended", "plugin:vue/strongly-recommended"],
   "rules": {
     "semi": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
